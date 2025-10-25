@@ -11,22 +11,21 @@ const explicitLabel = explicit === undefined ? astropodConfig.explicit : explici
 let cover_url = cover ? cover : astropodConfig.cover;
 ---
 
-<div class="card min-w-full bg-base-100 shadow-md md:pb-3 w-full">
+<div class="card min-w-full bg-base-100 shadow-md md:pb-3 w-full" dir="rtl">
   <div class="aspect-[3/1] mt-5 w-full">
     <div class="relative inline-block w-full">
       <img src={astropodConfig.banner} alt="بانر بودكاست الأمن السيبراني" class="object-cover w-full aspect-[3/1]" />
       <div
         class="absolute top-0 left-0 items-center justify-center w-full h-full bg-gradient-to-t from-gray-900 to-50% to-transparent"
       >
-        <div class="flex flex-col absolute bottom-0 left-32 md:left-52 px-3">
-          <!-- عدّل هذه الأسطر -->
+        <div class="flex flex-col absolute bottom-0 right-32 md:right-52 px-3 text-right">
           <p class="mb-1 text-xs font-medium text-white">رحلة في عالم الحماية الرقمية</p>
           <h1 class="mb-3 text-lg md:text-4xl font-black text-white">بودكاست الأمن السيبراني - CyberPath</h1>
         </div>
       </div>
       {
         explicitLabel && (
-          <span class="text-[10px] md:text-xs font-medium text-white border inline px-2 m-2 absolute top-0 right-0">
+          <span class="text-[10px] md:text-xs font-medium text-white border inline px-2 m-2 absolute top-0 left-0">
             محتوى حصري
           </span>
         )
@@ -39,16 +38,18 @@ let cover_url = cover ? cover : astropodConfig.cover;
     />
   </div>
 
-  <div class="flex md:-mt-12 px-4 md:pl-52">
-    <!-- عدّل القائمة لتتناسب مع المحتوى العربي -->
+  <div class="flex md:-mt-12 px-4 md:pr-52 md:pl-4" dir="rtl">
+    <!-- القائمة الرئيسية -->
     <a href="/" class="btn btn-ghost m-1 justify-self-start px-2 sm:px-4">الرئيسية</a>
     <a href="/about" class="btn btn-ghost m-1 justify-self-end px-2 sm:px-4">عن البودكاست</a>
     <a href="/episodes" class="btn btn-ghost m-1 justify-self-end px-2 sm:px-4">الحلقات</a>
 
     <div class="grow"></div>
 
+    <!-- قائمة منصات الاستماع -->
     <ListenOnMenu />
 
+    <!-- قائمة وسائل التواصل -->
     <FollowUsMenu />
 
     {
@@ -56,7 +57,7 @@ let cover_url = cover ? cover : astropodConfig.cover;
         <a
           href={astropodConfig.fundingUrl}
           class="btn btn-ghost btn-square m-1 sm:w-12 w-10 "
-          title={astropodConfig.fundingText}
+          title="ادعم البودكاست"
         >
           <HeartIcon />
         </a>
@@ -68,3 +69,10 @@ let cover_url = cover ? cover : astropodConfig.cover;
     </a>
   </div>
 </div>
+
+<style>
+  /* تحسينات للخط العربي إذا لزم الأمر */
+  .btn-ghost {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+</style>
