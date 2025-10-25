@@ -2,22 +2,22 @@
   "copyright": "",
   "theme": "light",
   "fundingText": "",
-  "author": "Author's name",
-  "name": "Podcast Name",
+  "author": "CyberPath Team",
+  "name": "بودكاست الأمن السيبراني",
   "banner": "/banner.webp",
   "pageSize": 15,
   "fundingUrl": "",
-  "owner": "",
+  "owner": "CyberPath",
   "favicon": "/favicon.svg",
   "explicit": false,
   "cover": "/cover.jpg",
-  "language": "en",
-  "link": "https://your-website-url.netlify.app",
+  "language": "ar",
+  "link": "https://cyberpath.vercel.app/podcast",
   "email": "your.email@gmail.com",
-  "description": "A short description of your podcast. We suggest creating a podcast description between 600-900 characters or 120-170 words in length.",
+  "description": "🎧 بودكاست الأمن السيبراني من CyberPath يقدم محتوى توعوي وتعليمي حول حماية الأنظمة والمعلومات، تحليل التهديدات الحديثة، الأمن الرقمي للأفراد والشركات، وأساليب الدفاع في عالم التقنية. حلقات أسبوعية بصوت مميز وأسلوب مبسط تساعدك على فهم مفاهيم الأمن السيبراني وتطبيقها في حياتك اليومية والعملية.",
   "category": [
     "Technology",
-    "Business"
+    "Education"
   ],
   "feedSize": ""
 }
