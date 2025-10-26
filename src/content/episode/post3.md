@@ -1,6 +1,6 @@
 ---
 title: "الحلقة التجريبية"
-audioUrl: "audioUrl: https://audio.com/alahli192024/audio/testmp3"
+audioUrl: " https://audio.com/alahli192024/audio/testmp3"
 pubDate: "Oct 25 2025"
 duration: "00:32"
 size:  0.7 
